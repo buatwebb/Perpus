@@ -1,0 +1,24 @@
+<?php
+require 'config.php';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $username = $_POST["username"];
+  $email = $_POST["email"];
+  $password = $_POST["password"];
+  $telp = $_POST["telp"];
+  $alamat = $_POST["alamat"];
+
+  if ($password != $_POST["confirm_password"]) {
+    echo "Password tidak cocok";
+  } else {
+    $query_sql = "INSERT INTO tpengguna (username, password, email, telp, alamat, role)
+                    VALUES ('$username', '$password', '$email', '$telp', '$alamat', 'orangtua')";
+
+    if (mysqli_query($conn, $query_sql)) {
+      header("location: login.php");
+    } else {
+      echo "Pendaftaran gagal : " . mysqli_error($conn);
+    }
+  }
+}
+?>
