@@ -110,6 +110,10 @@
             <input type="number" name="no_tlp" id="no_tlp" required>
         </div>
         <div class="form-group">
+            <label for="alamat">Alamat</label>
+            <input type="text" name="alamat" id="alamat" required>
+        </div>
+        <div class="form-group">
             <input type="submit" value="Register">
         </div>
     </form>
