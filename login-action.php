@@ -7,7 +7,7 @@ session_start();
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-$query = "SELECT * FROM tpengguna WHERE username = '$username' AND password = '$password'";
+$query = "SELECT * FROM tb_user WHERE username = '$username' AND password = '$password'";
 $login = mysqli_query($conn, $query);
 
 $cek = mysqli_num_rows($login);
@@ -30,12 +30,12 @@ if ($cek > 0) {
     } else {
         $message = "Username atau Password salah!";
         echo "<script>alert('$message');</script>";
-        echo "<script>window.location.href='login.php';</script>";
+        // echo "<script>window.location.href='login.php';</script>";
     }
 } else {
     $message = "Username atau Password salah!";
     echo "<script>alert('$message');</script>";
-    echo "<script>window.location.href='login.php';</script>";
-    exit();
+    // echo "<script>window.location.href='login.php';</script>";
+    // exit();
 }
 ?>
