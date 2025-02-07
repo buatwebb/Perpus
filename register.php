@@ -46,6 +46,7 @@
         }
 
         input[type="text"],
+        input[type="number"],
         input[type="password"] {
             width: 100%;
             padding: 12px;
@@ -59,6 +60,7 @@
         }
 
         input[type="text"]:focus,
+        input[type="number"]:focus,
         input[type="password"]:focus {
             outline: none;
             background: rgba(255, 255, 255, 0.3);
@@ -93,7 +95,7 @@
 </head>
 
 <body>
-    <form action="login-action.php" method="post">
+    <form action="register-action.php" method="post">
         <h1>Login</h1>
         <div class="form-group">
             <label for="username">Username</label>
@@ -104,10 +106,11 @@
             <input type="password" name="password" id="password" required>
         </div>
         <div class="form-group">
-            <input type="submit" value="Login">
+            <label for="no_tlp">No Telepon</label>
+            <input type="number" name="no_tlp" id="no_tlp" required>
         </div>
         <div class="form-group">
-            <a href="register.php" style="text-decoration: none; color: #ffffff;">Register</a>
+            <input type="submit" value="Register">
         </div>
     </form>
 </body>
