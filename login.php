@@ -93,7 +93,7 @@
 </head>
 
 <body>
-    <form action="login_action.php" method="post">
+    <form action="login-action.php" method="post">
         <h1>Login</h1>
         <div class="form-group">
             <label for="username">Username</label>

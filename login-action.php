@@ -32,7 +32,7 @@ if ($cek > 0) {
 }
  else {
     $message = "Username atau Password salah!";
-    echo "<script>alert('$message');</>";
+    echo "<script>alert('$message');</script>";
     echo "<script>window.location.href='login.php';</script>";
     exit();
 }
