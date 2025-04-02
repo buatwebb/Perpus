@@ -107,7 +107,7 @@
         </div>
         <div class="form-group">
             <label for="no_tlp">No Telepon</label>
-            <input type="number" name="no_tlp" id="no_tlp" required>
+            <input type="text" name="no_tlp" id="no_tlp" required>
         </div>
         <div class="form-group">
             <label for="alamat">Alamat</label>

@@ -68,7 +68,7 @@
         input[type="submit"] {
             width: 100%;
             padding: 12px;
-            background: linear-gradient(90deg, #00c6ff, #0072ff);
+            background: linear-gradient(90deg, #00c6ff,rgb(37, 91, 184));
             border: none;
             border-radius: 8px;
             color: #ffffff;
