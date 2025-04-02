@@ -24,13 +24,19 @@ if ($cek > 0) {
             header("Location: petugas/index.php");
         } else if($data['hak_akses'] == 'user'){
             header("Location: user/index.php");
-        } else {
-            echo '<script> alert("Anda Tidak Memiliki Akses"); </script>';
+        } else  {
+           
+            $message = "Username atau Password salah!";
+    echo "<script>alert('$message');</>";
+    echo "<script>window.location.href='login.php';</script>";
+    exit();
         }
-        exit();
+        
     }
 }
+
  else {
+    
     $message = "Username atau Password salah!";
     echo "<script>alert('$message');</>";
     echo "<script>window.location.href='login.php';</script>";
